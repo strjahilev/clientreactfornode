@@ -20,11 +20,11 @@ class App extends React.Component {
             <input type="text" ref={(input) => { this.Input = input; }} />
             <button onClick={this.additem.bind(this)}>BUTTON</button>
 
-    <ul>
-      {this.props.testStore.map((element, index) =>
-          <li key={index}>{element}</li>
-      )}
-    </ul>
+    {/*<ul>*/}
+    {/*  {this.props.testStore.map((element, index) =>*/}
+    {/*      <li key={index}>{element}</li>*/}
+    {/*  )}*/}
+    {/*</ul>*/}
 
   </div>
 

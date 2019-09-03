@@ -4,6 +4,7 @@
     <list default="true" id="6de59bcc-cbdd-4531-bf2f-8cb5b74e7c39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nodeforclientreact" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../redux1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -73,7 +74,8 @@
       <workItem from="1567238265433" duration="2184000" />
       <workItem from="1567258302467" duration="2397000" />
       <workItem from="1567275929433" duration="4622000" />
-      <workItem from="1567337247850" duration="1575000" />
+      <workItem from="1567337247850" duration="3956000" />
+      <workItem from="1567515934291" duration="3974000" />
     </task>
     <task id="LOCAL-00001" summary="last v">
       <created>1567333121670</created>
@@ -82,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567333121670</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="last v1 post request">
+      <created>1567345944558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567345944559</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="last v" />
-    <option name="LAST_COMMIT_MESSAGE" value="last v" />
+    <MESSAGE value="last v1 post request" />
+    <option name="LAST_COMMIT_MESSAGE" value="last v1 post request" />
   </component>
 </project>

@@ -30,13 +30,17 @@ class App extends React.Component {
 
   }
 }
-
+let mapStateToProps=(state) => {
+    return {
+        testStore: state
+    }
+};
+let dispatchMapToProps=(dispatch)=>{
+    return {
+        onAddItem: (item) => {dispatch(add(item))}
+    }
+}
 export default connect(
-    state => ({
-      testStore: state
-    }),
-    dispatch => ({
-      onAddItem: (item) => {dispatch(add(item))},
-
-    })
+    mapStateToProps,
+    dispatchMapToProps
 ) (App);

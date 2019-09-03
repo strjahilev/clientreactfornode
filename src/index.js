@@ -9,6 +9,7 @@ import add from './reducers/add'
 import * as serviceWorker from './serviceWorker';
 
 const store = createStore(add, applyMiddleware(thunk));
+console.log(store);
 
 ReactDOM.render(<Provider store={store}>
                     <App />

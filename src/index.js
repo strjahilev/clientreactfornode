@@ -6,14 +6,14 @@ import { Provider } from 'react-redux';
 import {createStore, applyMiddleware, } from "redux";
 import {getBooks} from './actions/actions';
 import thunk from 'redux-thunk';
-import reducer from './reducers'
+import add from './reducers'
 import * as serviceWorker from './serviceWorker';
 
-const store = createStore(reducer, applyMiddleware(thunk));
-console.log(store.getState());
+const store = createStore(add, applyMiddleware(thunk));
+
 
 store.dispatch(getBooks()).then(() => {
-    console.log(store);
+
     ReactDOM.render(<Provider store={store}>
         <App/>
     </Provider>, document.getElementById('root'));

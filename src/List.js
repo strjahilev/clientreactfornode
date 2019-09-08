@@ -1,26 +1,27 @@
 import React from 'react';
 import {connect} from "react-redux";
+// import Book from './Book'
 
-class List extends React.Component{
+const List = props => {
 
-    render(){
+    console.log(props.books);
+
+
         return <div>
             Book List:
-            <ul>
-                {this.props.books.map((book) => {
-                    return <li key={book.id}>
-                            {book}
-                        </li>}
 
-                )}
-            </ul>
+                <ul>{props.books.map(book => {
 
+return (<li key={book.id}>{book.title}</li>
+               )
+                })}
+                </ul>
         </div>
-    }
-}
+
+};
 let mapStateToProps=(state) => {
     return {
-        books: state
+        books: state.get
     }
 };
 export default connect(

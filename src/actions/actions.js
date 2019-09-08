@@ -17,15 +17,15 @@ export const add = (item = {
 
         return axios.post('books/create', book).then(result => {
             dispatch(_additem(result.data));
-            console.log(book);
+
         })    // dispatch({type: 'ADD', payload: item});
 
     };
 };
 
-const _getBooks = (item) => ({
+const _getBooks = (books) => ({
     type: 'GET',
-    payload: item
+    books
 });
 
 export const getBooks = () => {

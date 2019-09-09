@@ -1,13 +1,13 @@
 import axios from '../axios/axios';
 
-const _additem = (item) => ({
+const _additem = (book) => ({
     type: 'ADD',
-    payload: item
+    book
 });
 
 
 export const add = (item = {
-    title: '',
+    title: ''
 
 }) => {
     return (dispatch) => {
@@ -18,7 +18,7 @@ export const add = (item = {
         return axios.post('books/create', book).then(result => {
             dispatch(_additem(result.data));
 
-        })    // dispatch({type: 'ADD', payload: item});
+        })   // dispatch({type: 'ADD', payload: item});
 
     };
 };
@@ -42,3 +42,16 @@ console.log(books);
         });
     };
 };
+// const _editBook = (id, updates) => ({
+//     type: 'EDIT_BOOK',
+//     id,
+//     updates
+// });
+//
+// export const editBook = (id, updates) => {
+//     return (dispatch) => {
+//         return axios.put(`books/${id}`, updates).then(() => {
+//             dispatch(_editBook(id, updates));
+//         });
+//     }
+// };

@@ -8,6 +8,7 @@ import {getBooks} from './actions/actions';
 import thunk from 'redux-thunk';
 import add from './reducers'
 import * as serviceWorker from './serviceWorker';
+import AppRoute from "./Routes";
 
 const store = createStore(add, applyMiddleware(thunk));
 
@@ -15,7 +16,7 @@ const store = createStore(add, applyMiddleware(thunk));
 store.dispatch(getBooks()).then(() => {
 
     ReactDOM.render(<Provider store={store}>
-        <App/>
+        <AppRoute/>
     </Provider>, document.getElementById('root'));
 });
 

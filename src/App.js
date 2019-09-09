@@ -23,7 +23,7 @@ class App extends React.Component {
             <input type="text" ref={(input) => { this.Input = input; }} />
             <button onClick={this.additem.bind(this)}>BUTTON</button>
 
-            <List />
+            {/*<List />*/}
         </div>
 
     }

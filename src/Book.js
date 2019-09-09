@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 const Book = ({ id, title }) => (
     <div>
-<h1 key={id}>{title}</h1>
+        <Link to={`/book/${id}`}>
+            <p key={id}>{title}</p>
+        </Link>
     </div>
 );
 export default connect()(Book);

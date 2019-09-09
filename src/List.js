@@ -1,5 +1,7 @@
 import React from 'react';
 import {connect} from "react-redux";
+import {getBooks} from "./actions/actions";
+import Book from "./Book";
 // import Book from './Book'
 
 const List = props => {
@@ -12,7 +14,8 @@ const List = props => {
 
                 <ul>{props.books.map(book => {
 console.log(book.title);
-return (<li key={book.id}>{book.title}</li>
+return (<li key={book.id}>
+        <Book {...book} /></li>
                )
                 })}
                 </ul>
@@ -24,8 +27,15 @@ let mapStateToProps=(state) => {
         books: state.get
     }
 };
-export default connect(
-    mapStateToProps
+let dispatchMapToProps=(dispatch)=>{
+    return {
 
+        onGetItem: () => {dispatch(getBooks())}
+
+    }
+};
+export default connect(
+    mapStateToProps,
+dispatchMapToProps
 ) (List);
 

@@ -42,17 +42,30 @@ console.log(books);
         });
     };
 };
-const _editBook = (id, updates) => ({
+const _editBook = (book) => ({
     type: 'EDIT',
-    id,
-    updates
+   book
 });
 
 export const editBook = (id, updates) => {
+    console.log(id,updates);
     return (dispatch) => {
-        return axios.put(`books/${id}`, updates).then((result) => {
-            console.log(result);
+        return axios.put(`books/${id}`, updates).then(() => {
+
             dispatch(_editBook(id, updates));
         });
+    }
+};
+
+const _removeBook = ({ id } = {}) => ({
+    type: 'REMOVE',
+    id
+});
+
+export const removeBook = ({ id } = {}) => {
+    return (dispatch) => {
+        return axios.delete(`books/${id}`).then(() => {
+            dispatch(_removeBook({ id }));
+        })
     }
 };

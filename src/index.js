@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+
 import { Provider } from 'react-redux';
 import {createStore, applyMiddleware, } from "redux";
 import {getBooks} from './actions/actions';
@@ -9,6 +9,7 @@ import thunk from 'redux-thunk';
 import add from './reducers'
 import * as serviceWorker from './serviceWorker';
 import AppRoute from "./Routes";
+
 
 const store = createStore(add, applyMiddleware(thunk));
 

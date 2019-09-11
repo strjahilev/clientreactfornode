@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6de59bcc-cbdd-4531-bf2f-8cb5b74e7c39" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/reducers/edit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Editbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Editbook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/get.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/get.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +89,7 @@
       <workItem from="1567609369425" duration="582000" />
       <workItem from="1567613456552" duration="11974000" />
       <workItem from="1567696176822" duration="6985000" />
-      <workItem from="1567846732259" duration="26223000" />
+      <workItem from="1567846732259" duration="45228000" />
     </task>
     <task id="LOCAL-00001" summary="last v">
       <created>1567333121670</created>
@@ -130,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568044413519</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="last v4 routes+links+edit">
+      <created>1568059984951</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568059984952</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +165,7 @@
     <MESSAGE value="last v2 get request" />
     <MESSAGE value="last v2 get request full doing" />
     <MESSAGE value="last v3 routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="last v3 routes" />
+    <MESSAGE value="last v4 routes+links+edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="last v4 routes+links+edit" />
   </component>
 </project>

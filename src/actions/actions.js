@@ -42,16 +42,17 @@ console.log(books);
         });
     };
 };
-// const _editBook = (id, updates) => ({
-//     type: 'EDIT_BOOK',
-//     id,
-//     updates
-// });
-//
-// export const editBook = (id, updates) => {
-//     return (dispatch) => {
-//         return axios.put(`books/${id}`, updates).then(() => {
-//             dispatch(_editBook(id, updates));
-//         });
-//     }
-// };
+const _editBook = (id, updates) => ({
+    type: 'EDIT',
+    id,
+    updates
+});
+
+export const editBook = (id, updates) => {
+    return (dispatch) => {
+        return axios.put(`books/${id}`, updates).then((result) => {
+            console.log(result);
+            dispatch(_editBook(id, updates));
+        });
+    }
+};

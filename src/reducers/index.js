@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 
 import add from './add';
-import get from './get';
+import getbook from './get';
+import edit from'./edit'
 
 export default combineReducers({
     add,
-    get
+    getbook,
+    edit
 })

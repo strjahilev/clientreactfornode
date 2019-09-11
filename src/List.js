@@ -24,7 +24,7 @@ return (<li key={book.id}>
 };
 let mapStateToProps=(state) => {
     return {
-        books: state.get
+        books: state.getbook
     }
 };
 let dispatchMapToProps=(dispatch)=>{

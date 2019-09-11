@@ -1,4 +1,4 @@
-export default function get (state=[], action){
+export default function getbook (state=[], action){
         if(action.type==='GET'){
             return action.books
 
